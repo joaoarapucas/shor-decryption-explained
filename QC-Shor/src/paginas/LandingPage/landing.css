@@ -1,0 +1,79 @@
+/* IMPORT DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Anta:wght@400;700&display=swap');
+
+
+/* ANIMAÇÕES */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes degradeAnimado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* CSS DE VDD */
+
+:root {
+    --fontGeral: Anta;
+}
+
+body {
+    background: linear-gradient(to bottom, #06000B, #140522);
+}
+
+.atom-icon {
+    color: #60A5FA;
+    width: 100px;
+    height: 100px;
+    animation: spin 10s linear infinite;
+}
+
+h1 {
+    background: linear-gradient(to right, #729EFA, #A48DFB, #E676C8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-family: var(--fontGeral);
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+h3 {
+    font-family: var(--fontGeral);
+    font-size: 25px;
+    color: #B4B4B4
+}
+
+.landing-button {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background: linear-gradient(to right, #2E5FEB, #8738EA);
+    border-radius: 50px;
+    width:305px;
+    height: 75px;
+    font-family: var(--fontGeral);
+    font-size: 24px;
+
+    background-size: 600%;
+    box-shadow: 
+    0 0 40px #8738EAAD;
+
+    transition: box-shadow 0.5s ease;
+
+}
+
+.landing-button:hover{
+    box-shadow: 0 0 100px #8738EAAD;
+    animation: degradeAnimado 5s linear infinite;
+}
