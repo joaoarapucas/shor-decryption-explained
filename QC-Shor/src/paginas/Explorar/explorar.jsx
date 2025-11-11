@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { MenuLateral } from "../../componentes/MenuLateral/menuLateral"
+import { MenuLateral } from "../../componentes/MenuLateral/MenuLateral"
 import './explorar.css'
-import { CardComFoto } from "../../componentes/CardComFoto/CardComFoto";
 import { PrincipaisCientistas } from "./PrincipaisCientistas/PrincipaisCientistas";
 
 export function Explorar(){
