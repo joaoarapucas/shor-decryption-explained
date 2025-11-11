@@ -1,8 +1,8 @@
 
 .hamburger-button {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 5px;
+  left: 1px;
   background: none;
   border: none;
   cursor: pointer;
@@ -11,12 +11,8 @@
 }
 
 .hamburger-button:hover {
-    background-size: 600%;
-    border-radius: 100px;
-    box-shadow: 
-    0 0 40px #8738EAAD;
-
-    transition: box-shadow 0.5s ease;
+  background: linear-gradient(to right, #A48DFB, #C882F2, #E676C8);
+  border-radius: 10px;
 }
 
 .sidebar {
@@ -42,6 +38,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 10px;
 }
 
 .hamburger-options {

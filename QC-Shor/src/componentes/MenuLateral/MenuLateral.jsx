@@ -2,50 +2,41 @@ import { useState } from "react";
 import { Menu, EllipsisVertical } from "lucide-react";
 import "./MenuLateral.css";
 
-export function MenuLateral() {
-  const [showMenu, setShowMenu] = useState(false);
+export function MenuLateral( { onSelecionarTopico: onSelecionarOpcao, options } ) {
+    
+    const iconSize = 32;
+    const [showMenu, setShowMenu] = useState(false);
 
-  const topicos = [
-    "O que é física quântica?",
-    "Clássico vs Quântico",
-    "Principais cientistas",
-    "Princípios fundamentais",
-    "Computação quântica",
-    "Simulação",
-    "Descriptografia quântica",
-  ];
+    function toggleMenu() {
+        setShowMenu(!showMenu);
+    }
 
-  function toggleMenu() {
-    setShowMenu(!showMenu);
-  }
+    function selecionarOpcao(o){
+        onSelecionarOpcao?.(o);
+        setShowMenu(false);
+    }
 
-  function selecionar(topico) {
-    console.log(topico);
-    // Aqui você pode adicionar navegação, scroll ou mudança de conteúdo
-  }
-
-  const iconSize = 32;
-
-  return (
+    return (
     <>
-      {/* Botão de abrir/fechar */}
+      {/*botao de abrir/fechar*/}
       <button onClick={toggleMenu} className="hamburger-button">
         {showMenu ? <EllipsisVertical size={iconSize} /> : <Menu size={iconSize} />}
       </button>
 
-      {/* Menu lateral */}
+      {/*sidebar*/}
       <nav className={`sidebar ${showMenu ? "open" : ""}`}>
         <ul>
-          {topicos.map((t, i) => (
-            <li key={i} className="hamburger-options" onClick={() => selecionar(t)}>
-              {t}
+        {/*loop pra exibir todos itens*/}
+          {options.map((o, i) => (
+            <li key={i} className="hamburger-options" onClick={() => selecionarOpcao(o)}>
+              {o}
             </li>
           ))}
         </ul>
       </nav>
 
-      {/* Fundo escurecido para clique fora fechar */}
+      {/*fundo escurecido e clique fora p fechar*/}
       {showMenu && <div className="overlay" onClick={toggleMenu}></div>}
     </>
-  );
+    );
 }
