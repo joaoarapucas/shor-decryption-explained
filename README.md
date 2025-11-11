@@ -1,2 +1,5 @@
 # shor-decryption-explained
-Explanation of basic quantum computing, cryptography and how Shor's algorithm can break our main way of keeping data secure.
+resuminho de física quântica e o algoritmo de Shor
+
+# link 
+https://joaoarapucas.github.io/shor-decryption-explained/
