@@ -1,0 +1,42 @@
+.card-expandivel {
+    background-color: #2E0A4B;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+.card-row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    user-select: none;
+}
+
+.card-row-container:hover{
+    cursor: pointer;
+}
+
+.card-expand-arrow {
+    margin-left: auto;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.conteudo-expandivel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+    padding-right: 75px;
+}
+
+.conteudo-expandivel p {
+    font-family: Anta;
+    color: #B4B4B4;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.conteudo-expandivel.aberto {
+    max-height: 500px;
+    transition: max-height 0.4s ease-in;
+}

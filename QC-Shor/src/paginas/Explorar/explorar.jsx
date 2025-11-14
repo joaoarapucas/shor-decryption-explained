@@ -2,6 +2,7 @@ import { useState } from "react";
 import { MenuLateral } from "../../componentes/MenuLateral/MenuLateral"
 import './explorar.css'
 import { PrincipaisCientistas } from "./PrincipaisCientistas/PrincipaisCientistas";
+import { PrincipiosFundamentais } from "./PrincipiosFundamentais/PrincipiosFundamentais";
 
 export function Explorar(){
     const topicos = [
@@ -24,6 +25,9 @@ export function Explorar(){
             break;
         case "Principais cientistas":
             conteudo = <PrincipaisCientistas />
+            break;
+        case "Princípios fundamentais":
+            conteudo = <PrincipiosFundamentais />
             break;
     }
 

@@ -18,7 +18,7 @@
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px; /*esconde na esquerda*/
+  left: -300px; /*esconde na esquerda*/
   width: 250px;
   height: 100vh;
   background-color: #111;
