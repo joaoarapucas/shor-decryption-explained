@@ -1,0 +1,11 @@
+
+.card-simples {
+    background: linear-gradient(109.65deg, #6D1A66 33.39%, #591C84 70.41%);
+    border-radius: 25px;
+    padding: 0px 25px 25px 25px;
+    text-align: justify;
+}
+.card-simples h1 {
+    display: flex;
+    justify-content: flex-start;
+}

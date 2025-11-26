@@ -3,6 +3,7 @@ import { MenuLateral } from "../../componentes/MenuLateral/MenuLateral"
 import './explorar.css'
 import { PrincipaisCientistas } from "./PrincipaisCientistas/PrincipaisCientistas";
 import { PrincipiosFundamentais } from "./PrincipiosFundamentais/PrincipiosFundamentais";
+import { ClassicoVsQuantico } from "./ClassicoVsQuantico/ClassicoVsQuantico";
 
 export function Explorar(){
     const topicos = [
@@ -29,15 +30,18 @@ export function Explorar(){
         case "Princípios fundamentais":
             conteudo = <PrincipiosFundamentais />
             break;
+        case "Clássico vs Quântico":
+            conteudo = <ClassicoVsQuantico />
+            break;
     }
 
     return (
-    <div className="pagina-inteira">
-        <MenuLateral onSelecionarTopico={setTopicoSelecionado} options={topicos}/>
-        <h1 className="title">{topicoSelecionado}</h1>
-        <div className="conteudo-container">
-            {conteudo}
+        <div className="pagina-inteira">
+            <MenuLateral onSelecionarTopico={setTopicoSelecionado} options={topicos}/>
+            <h1 className="title">{topicoSelecionado}</h1>
+            <div className="conteudo-container">
+                {conteudo}
+            </div>
         </div>
-    </div>
     )
 };

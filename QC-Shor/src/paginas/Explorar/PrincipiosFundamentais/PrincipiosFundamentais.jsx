@@ -36,7 +36,6 @@ export function PrincipiosFundamentais(){
             titulo: 'Superposição quântica',
             descricao: 'A superposição é a capacidade das partículas estarem em vários estados ao mesmo tempo até que sejam medidas. Um exemplo simples é um interruptor que pode estar ligado e desligado simultaneamente no domínio quântico. Na computação quântica, isso permite que qubits representem 0, 1 ou ambos simultaneamente, aumentando muito o poder de processamento.​​'
         },
-        
     ]
 
     return (
