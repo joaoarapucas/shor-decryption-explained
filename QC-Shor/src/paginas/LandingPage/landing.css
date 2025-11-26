@@ -12,12 +12,6 @@
   }
 }
 
-@keyframes degradeAnimado {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 
 /* CSS DE VDD */
 
@@ -83,16 +77,18 @@ h3 {
 .landing-button {
     margin-top: 40px;
     margin-bottom: 10%;
+
     background: linear-gradient(to right, #2E5FEB, #8738EA);
+    background-size: 120% 100%;
+    background-position: center;
+    
     border-radius: 50px;
     width:305px;
     height: 75px;
     font-family: var(--fontGeral);
     font-size: 24px;
-
-    background-size: 600%;
-    box-shadow: 
-    0 0 40px #8738EAAD;
+    border-color: transparent;
+    box-shadow: 0 0 40px #8738EAAD;
 
     transition: box-shadow 0.5s ease;
 

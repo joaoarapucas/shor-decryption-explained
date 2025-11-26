@@ -1,0 +1,20 @@
+.card-descricao {
+    background-color: #1A082F;
+    border-radius: 35px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    
+    background: linear-gradient(to right, #729EFA, #A48DFB, #E676C8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
