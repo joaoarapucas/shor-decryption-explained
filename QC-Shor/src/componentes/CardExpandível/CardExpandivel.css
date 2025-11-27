@@ -32,8 +32,7 @@
 .conteudo-expandivel p {
     font-family: Anta;
     color: #B4B4B4;
-    text-align: justify;
-    text-indent: 2rem;
+    text-align: left;
 }
 
 .conteudo-expandivel.aberto {

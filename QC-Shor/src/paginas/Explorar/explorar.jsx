@@ -5,6 +5,8 @@ import { PrincipaisCientistas } from "./PrincipaisCientistas/PrincipaisCientista
 import { PrincipiosFundamentais } from "./PrincipiosFundamentais/PrincipiosFundamentais";
 import { ClassicoVsQuantico } from "./ClassicoVsQuantico/ClassicoVsQuantico";
 import DefinicaoQuantica from "./DefinicaoQuantica/DefinicaoQuantica";
+import ComputacaoQuantica from "./ComputacaoQuantica/ComputacaoQuantica";
+import Referencias from "./Referencias/Referencias";
 
 export function Explorar(){
     const topicos = [
@@ -25,11 +27,14 @@ export function Explorar(){
         default:
             conteudo = <div>
                             <p>! ! ! Em construção ! ! !</p>
-                            <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fpng.pngtree.com%2Fpng-clipart%2F20230423%2Foriginal%2Fpngtree-3d-safety-helmet-for-construction-site-work-png-image_9084703.png&sp=1764126803Te3b58f65c8c80f040312d3e11f76479902111ce397fc9bd39d13de0e2236db79" width={500}></img>
+                            <img src="https://www.pngkey.com/png/full/397-3975496_under-construction-png-website-under-construction-icon.png" width={500}></img>
                        </div>
             break;
         case "O que é física quântica?":
             conteudo = <DefinicaoQuantica />
+            break;
+        case "Clássico vs Quântico":
+            conteudo = <ClassicoVsQuantico />
             break;
         case "Principais cientistas":
             conteudo = <PrincipaisCientistas />
@@ -37,10 +42,13 @@ export function Explorar(){
         case "Princípios fundamentais":
             conteudo = <PrincipiosFundamentais />
             break;
-        case "Clássico vs Quântico":
-            conteudo = <ClassicoVsQuantico />
+        case "Computação quântica":
+            conteudo = <ComputacaoQuantica />
             break;
-    }
+        case "Referências":
+            conteudo = <Referencias />
+            break;
+            }
 
     return (
         <div className="pagina-inteira">

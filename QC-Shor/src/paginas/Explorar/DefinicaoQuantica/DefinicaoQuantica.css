@@ -6,8 +6,8 @@
 
 .resumo {
     color:#B4B4B4;
-    text-align: justify;
-    text-indent: 2rem;
+    text-align: left;
+    margin-bottom: 30px;
 }
 
 .elementos-container {
