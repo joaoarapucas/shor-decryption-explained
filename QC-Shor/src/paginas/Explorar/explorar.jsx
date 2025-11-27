@@ -6,6 +6,7 @@ import { PrincipiosFundamentais } from "./PrincipiosFundamentais/PrincipiosFunda
 import { ClassicoVsQuantico } from "./ClassicoVsQuantico/ClassicoVsQuantico";
 import DefinicaoQuantica from "./DefinicaoQuantica/DefinicaoQuantica";
 import ComputacaoQuantica from "./ComputacaoQuantica/ComputacaoQuantica";
+import Referencias from "./Referencias/Referencias";
 
 export function Explorar(){
     const topicos = [
@@ -43,6 +44,9 @@ export function Explorar(){
             break;
         case "Computação quântica":
             conteudo = <ComputacaoQuantica />
+            break;
+        case "Referências":
+            conteudo = <Referencias />
             break;
             }
 
