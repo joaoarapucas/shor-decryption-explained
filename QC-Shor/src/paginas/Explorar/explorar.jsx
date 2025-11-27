@@ -7,6 +7,7 @@ import { ClassicoVsQuantico } from "./ClassicoVsQuantico/ClassicoVsQuantico";
 import DefinicaoQuantica from "./DefinicaoQuantica/DefinicaoQuantica";
 import ComputacaoQuantica from "./ComputacaoQuantica/ComputacaoQuantica";
 import Referencias from "./Referencias/Referencias";
+import DescriptografiaQuantica from "./DescriptografiaQuantica/DescriptografiaQuantica";
 
 export function Explorar(){
     const topicos = [
@@ -44,6 +45,9 @@ export function Explorar(){
             break;
         case "Computação quântica":
             conteudo = <ComputacaoQuantica />
+            break;
+        case "Descriptografia quântica":
+            conteudo = <DescriptografiaQuantica />
             break;
         case "Referências":
             conteudo = <Referencias />
