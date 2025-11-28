@@ -1,13 +1,9 @@
+import BotaoNavegar from '../../componentes/BotaoNavegar/BotaoNavegar'
 import './landing.css'
 import {Atom} from 'lucide-react'
-import { useNavigate } from 'react-router-dom'
 
 export function LandingPage(){
-  const navigate = useNavigate(); 
-  function irParaOutraPagina(){
-    navigate('/explorar');
-  }
-
+ 
   return(
 
     <div className='landing-container'>
@@ -18,7 +14,7 @@ export function LandingPage(){
           "Se você acha que entende mecânica quântica, é porque não entende mecânica quântica."<br></br>
           -Richard P. Feynnman
         </h3>
-        <button className='landing-button' onClick={irParaOutraPagina}>Explorar conceitos</button>
+        <BotaoNavegar nome={"Iniciar"} endereco={"/explorar"} />
       </div>
     </div>  
   )

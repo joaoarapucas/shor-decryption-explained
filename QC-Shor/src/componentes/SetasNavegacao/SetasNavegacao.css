@@ -1,0 +1,19 @@
+.setas{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.seta {
+    background: linear-gradient(to right, #2E5FEB, #8738EA);
+    background-size: 120% 100%;
+    background-position: center;
+    border-radius: 25%;
+    border: transparent solid 3px;
+}
+
+.seta:hover {
+    border: #E676C8 solid 3px;
+    
+    animation: degradeAnimado 5s linear infinite;
+}

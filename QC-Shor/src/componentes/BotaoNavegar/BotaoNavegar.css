@@ -1,0 +1,23 @@
+.botao-navegar {
+    margin-top: 40px;
+
+    background: linear-gradient(to right, #2E5FEB, #8738EA);
+    background-size: 120% 100%;
+    background-position: center;
+    
+    border-radius: 50px;
+    width:305px;
+    height: 75px;
+    font-family: var(--fontGeral);
+    font-size: 24px;
+    border-color: transparent;
+    box-shadow: 0 0 40px #8738EAAD;
+
+    transition: box-shadow 0.5s ease;
+
+}
+
+.botao-navegar:hover{
+    box-shadow: 0 0 100px #8738EAAD;
+    animation: degradeAnimado 5s linear infinite;
+}

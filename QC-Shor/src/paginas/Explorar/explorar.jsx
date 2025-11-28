@@ -8,9 +8,12 @@ import DefinicaoQuantica from "./DefinicaoQuantica/DefinicaoQuantica";
 import ComputacaoQuantica from "./ComputacaoQuantica/ComputacaoQuantica";
 import Referencias from "./Referencias/Referencias";
 import DescriptografiaQuantica from "./DescriptografiaQuantica/DescriptografiaQuantica";
+import Introducao from "./Introducao/Introducao";
+import { NavegacaoSetas } from "../../componentes/SetasNavegacao/SetasNavegacao";
 
 export function Explorar(){
     const topicos = [
+        "Introdução",
         "O que é física quântica?",
         "Clássico vs Quântico",
         "Principais cientistas",
@@ -29,6 +32,9 @@ export function Explorar(){
                             <p>! ! ! Em construção ! ! !</p>
                             <img src="https://www.pngkey.com/png/full/397-3975496_under-construction-png-website-under-construction-icon.png" width={500}></img>
                        </div>
+            break;
+        case "Introdução":
+            conteudo = <Introducao />
             break;
         case "O que é física quântica?":
             conteudo = <DefinicaoQuantica />
@@ -59,6 +65,13 @@ export function Explorar(){
             <h1 className="title">{topicoSelecionado}</h1>
             <div className="conteudo-container">
                 {conteudo}
+                <div className="setas-container">
+                    <NavegacaoSetas
+                        topicos={topicos}
+                        topicoAtual={topicoSelecionado}
+                        onSelecionarTopico={setTopicoSelecionado}
+                    />
+                </div>
             </div>
         </div>
     )
