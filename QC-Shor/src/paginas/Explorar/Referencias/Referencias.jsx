@@ -3,11 +3,11 @@ import './Referencias.css'
 export default function Referencias(){
 
     let refLivros = [
-        'Matemática discreta - uma introdução',
-        'Redes de computadores fourth edition - tanembaum',
-        'Criptography and network security 4th edition - stallings',
-        'Quantum computing for computer scientists',
-        'Algoritmos - CLRS',
+        'SCHEINERMAN, Edward. Matemática Discreta: Uma Introdução',
+        'TANENBAUM, Andrew S. Computer Networks (Redes de Computadores). 4th Edition',
+        'STALLINGS, William. Cryptography and Network Security: Principles and Practice. 4th Edition',
+        'YANOFSKY, Noson S. e MANNUCCI, Mirco A. Quantum Computing for Computer Scientists',
+        'CORMEN, Thomas H.; LEISERSON, Charles E.; RIVEST, Ronald L.; STEIN, Clifford. Introduction to Algorithms',
     ]
 
     let refLinks = [

@@ -107,7 +107,10 @@ export default function DescriptografiaQuantica(){
                                 <QuantumVsClassicCanvas />
                             </div>
                             <p>E como isso é útil? Através de ondas e interferência. As ondas de todos os estados da superposição interferem entre si, reforçando umas às outras, ou destruindo. Isso implica que muitas ondas vão apontar para o valor que desejamos, o período, e muitas vão estar espalhadas aleatoriamente. As que apontam para o valor que desejamos vão se reforçar, fazendo com que o estado delas seja mais provável, enquanto as diferentes fazem o contrário. Usando o que chamamos de Transformada de Fourier Quântica, pode-se usar a interferência para que o valor relacionado ao período seja mais provável de ser medido. Por fim, basta medirmos para colapsar a superposição e ver qual o resultado - como é probabilístico, ainda pode estar errado, mas a interferência faz com que a probabilidade de estar certo fique maior.</p>
-                            <iframe src="https://editor.p5js.org/jonasbroder/full/-YbYeoym5"></iframe>
+                            <figure>
+                                <iframe src="https://editor.p5js.org/jonasbroder/full/-YbYeoym5"></iframe>
+                                <figcaption>Experimento da dupla fenda, que mostra visualmente a interferência das ondas.</figcaption>
+                            </figure>
                             <li>Limitações</li>
                             <p>Atualmente, o motivo de o mundo não estar acabando pelo algoritmo de Shor se deve a limitações físicas. Os computadores quânticos atuais possuem uma quantidade muito baixa de qubits lógicos efetivos, e mesmo assim ainda há muito ruído atrapalhando na medição dos valores. O algoritmo de Shor já foi demonstrado, porém para números muito baixos, servindo como prova de conceito.</p>
                        </>
