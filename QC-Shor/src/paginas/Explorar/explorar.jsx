@@ -16,7 +16,6 @@ export function Explorar(){
         "Principais cientistas",
         "Princípios fundamentais",
         "Computação quântica",
-        "Simulação",
         "Descriptografia quântica",
         "Referências",
     ];
